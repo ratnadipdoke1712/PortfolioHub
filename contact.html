@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<section class="contact-section">
+    <h2>Get in Touch</h2>
+    <p class="contact-subtitle">
+        Feel free to reach out for collaboration, project discussion, or any queries.
+    </p>
+
+    <div class="contact-container">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+
+            <p>📧 <strong>Email:</strong> ratnadipdoke1712@gmail.com</p>
+            <p>📞 <strong>Phone:</strong> +91-9322306639</p>
+            <p>📍 <strong>Location:</strong> Pune, Maharashtra, India</p>
+
+            <div class="social-links">
+                <a href="#" title="GitHub">🐙</a>
+                <a href="#" title="LinkedIn">💼</a>
+                <a href="#" title="Twitter">🐦</a>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+<div class="contact-form">
+    <h3>Send a Message</h3>
+    <p class="form-subtitle">I’ll get back to you as soon as possible</p>
+
+    <form method="POST">
+
+        <div class="input-group">
+            <span class="input-icon"></span>
+            <input type="text" name="name" required>
+            <label>Your Name</label>
+        </div>
+
+        <div class="input-group">
+            <span class="input-icon"></span>
+            <input type="email" name="email" required>
+            <label>Your Email</label>
+        </div>
+
+        <div class="input-group">
+            <span class="input-icon"></span>
+            <textarea name="message" rows="4" required></textarea>
+            <label>Your Message</label>
+        </div>
+
+        <button type="submit" class="send-btn">
+            🚀 Send Message
+        </button>
+
+    </form>
+</div>
+
+
+    </div>
+</section>
+
+{% endblock %}

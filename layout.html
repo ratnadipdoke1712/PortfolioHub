@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+    <a href="{{ url_for('home') }}" class="nav-btn">Home</a>
+    <a href="{{ url_for('projects') }}" class="nav-btn">Projects</a>
+    <a href="{{ url_for('contact') }}" class="nav-btn">Contact</a>
+    <a href="{{ url_for('resume') }}" class="nav-btn">Resume</a>
+    </nav>
+
+
+    {% block content %}{% endblock %}
+
+    <!-- 🔹 FOOTER -->
+    <footer class="footer">
+        <p>© 2025 PortfolioHub | Built with Flask & Python</p>
+    </footer>
+</body>
+</html>
